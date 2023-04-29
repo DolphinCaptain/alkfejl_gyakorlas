@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="alkfejl.controller.addOrder">
+   <children>
+      <Label layoutX="185.0" layoutY="14.0" text="Rendelés adatai">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="91.0" text="Név">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="135.0" text="Titulus">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="182.0" text="Adag">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="227.0" text="Szállítás ideje">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="275.0" text="Fizetőeszköz">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Button layoutX="185.0" layoutY="337.0" mnemonicParsing="false" onAction="#onCreateOrder" prefHeight="38.0" prefWidth="98.0" text="Rendel">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="300.0" layoutY="337.0" mnemonicParsing="false" onAction="#onCancel" prefHeight="38.0" prefWidth="98.0" text="Cancel">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="name" layoutX="176.0" layoutY="92.0" prefHeight="26.0" prefWidth="370.0" promptText="Rendelo neve" />
+      <DatePicker fx:id="delivery" layoutX="176.0" layoutY="227.0" prefHeight="26.0" prefWidth="370.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets></DatePicker>
+      <ComboBox fx:id="title" layoutX="176.0" layoutY="136.0" prefHeight="26.0" prefWidth="370.0" />
+      <ComboBox fx:id="portion" layoutX="176.0" layoutY="182.0" prefHeight="26.0" prefWidth="370.0" />
+      <RadioButton layoutX="218.0" layoutY="274.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="110.0" selected="true" text="Kártyával">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="payment" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton layoutX="360.0" layoutY="274.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="110.0" text="Wuipupip" toggleGroup="$payment">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+   </children>
+</AnchorPane>
